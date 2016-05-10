@@ -1,6 +1,6 @@
 # SafeTwitch
 
-The extension does the following:
+This extension is meant for [twitch](https://www.twitch.tv/directory/all) and does the following:
 
 - Links will still show up in chat, but clicking them won't open the link. The only way to open a link would be to explicitly right click and select "open link in new tab". 
 
