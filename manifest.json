@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2,
+	"name": "SafeTwitch",
+	"version": "1.0",
+	"background":
+	{
+		"scripts":
+		[
+			"js/util/eventemitter.js",
+			"js/util/utils.js",
+			"js/background/main.js"
+		]
+	},
+	"content_scripts":
+	[
+		{
+			"js":
+			[
+				"js/util/eventemitter.js",
+				"js/util/utils.js",
+				"js/util/bliss.js",
+				"js/content/twitch.js"
+			],
+			"matches":
+			[
+				"<all_urls>"
+			],
+			"run_at": "document_start"
+		}
+	],
+	"permissions":
+	[
+		"contextMenus",
+		"tabs",
+		"<all_urls>"
+	],
+	"icons": {
+		"16": "images/app16.png",
+		"48": "images/app48.png"
+	}
+}
